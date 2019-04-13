@@ -15,24 +15,27 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "帮帮首页",
-        "iconPath": "resources/location.png"
+        "text": "首页",
+        "iconPath": "resources/image/首页.png",
+        "selectedIconPath":"resources/img/首页.png"
       },
       {
         "pagePath": "pages/help/help",
-        "text": "我的单单",
-        "iconPath": "resources/location.png"
+        "text": "订单",
+        "iconPath": "resources/image/订单.png",
+        "selectedIconPath": "resources/img/订单.png"
       },
       {
         "pagePath": "pages/me/me",
-        "text": "我的资料",
-        "iconPath": "resources/location.png"
+        "text": "我",
+        "iconPath": "resources/image/我的.png",
+        "selectedIconPath": "resources/img/我的.png"
       }
     ]
   },
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarBackgroundColor": "#B0E0E6",
     "navigationBarTitleText": "飞毯",
     "navigationBarTextStyle": "black"
   },

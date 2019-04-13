@@ -11,6 +11,8 @@
  display: flex;
    background-color: rgb(255, 255, 255);
    box-shadow: 10rpx 10rpx 20rpx  #4d4747;
+   border-radius: 30px;
+   border-left: 1px solid #d8d8d8
 }
 .angle{
   float: right;
@@ -25,7 +27,13 @@
   font-size: 36rpx;
   text-align: center;
   color: #000000;
-  border: 1px solid #c1c1c1; 
+  border-left: 1px solid #c1c1c1; 
+  flex:1;
+}
+.top-btn-1{
+  font-size: 36rpx;
+  text-align: center;
+  color: #000000;
   flex:1;
 }
 .scroll{
@@ -83,6 +91,8 @@
   height:100rpx;
   background-color: #ffffff;
   border-radius: 50%; 
+  margin-left: 40rpx;
+  margin-right: 10rpx;
 }
 .content-msg{
   box-shadow: 10rpx 10rpx 20rpx  #4d4747;
@@ -129,8 +139,8 @@
   display: inline-block;
   text-align: center;
   border-radius: 5rpx;
-
 }
+
 .content-msg-1-price{
   margin-left: 20rpx;
   width: 130rpx;
@@ -139,7 +149,7 @@
   display: inline-block;
   text-align: center;
   border-radius: 50rpx;
-  color: rgb(245, 51, 51);
+  color: rgb(64, 124, 151);
 }
 .content-msg-2-room{
   width: 130rpx;
@@ -177,8 +187,8 @@
   text-align: center;
   border-radius: 50%;
   border: 1px solid #c1c1c1;
-  color: rgb(245, 51, 51);
-  background-color: #18f5f5;
+  color: #2F4F4F(245, 51, 51);
+  background-color: #B0E0E6;
 }
 .content-msg-3-date{
    margin-left: 50rpx;

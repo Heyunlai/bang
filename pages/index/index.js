@@ -8,21 +8,21 @@ Page({
   data:{
     
     height: app.globalData.windowHeight,
-    longitude: "",
-    latitude: "",
+    longitude: "11.6",
+    latitude: "11.5",
     district: " 区",
     region: "[province, city, district]",
     msgArray:[
       {
         id:"1",
-        nickName:"示例",
+        nickName:"昵称示例",
         faceSrc:"/resources/msg.png",
-        type:"示例",
-        building:"示例",
-        price:"￥3",
-        room:"示例",
-        message:"示例",
-        date:"示例"
+        type:"类型示例",
+        building:"楼栋示例",
+        price:"3",
+        room:"房间示例",
+        message:"事务示例",
+        dateTime:"时间示例"
       }
     ]
   },
@@ -62,6 +62,7 @@ Page({
     
   },
   handleNearMsgTap(){
+ 
      const latitude=this.data.latitude;
      const longitude=this.data.longitude;
     wx.navigateTo({

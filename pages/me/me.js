@@ -30,7 +30,12 @@ Page({
 
   },
   handleSubmit(){
-    _page=this;
+    _page = this;
+    _page.setData({
+            isLogin:true,
+           
+          });
+  
     if (!this.data.account || this.data.account =="7680921"){
       wx.showToast({
         title: '请输入账号',

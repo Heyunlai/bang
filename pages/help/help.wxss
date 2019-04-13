@@ -19,12 +19,15 @@
 }
 .help,.request{
   background-color: rgb(255, 255, 255);
-  border-top: 1px solid #c1c1c1;
-  border-bottom: 1px solid #c1c1c1;
+  border-top: 1px solid #3f3f3f;
+  border-bottom: 1px solid #3f3f3f;
   line-height: 80rpx;
+  color: #13a7bb;
   /* font-weight: 700; */
 }
+
 .line{
+  border-bottom: 1px solid #c1c1c1;
   line-height: 80rpx;
   /* border-bottom: 1px solid rgb(223, 223, 223); */
 }
@@ -36,4 +39,24 @@
 }
 text{
   margin-left:30rpx; 
+}
+.right{
+  float: right;
+  font-size: 35rpx;
+  height:50rpx;
+  width: 90rpx;
+  line-height: 50rpx;
+  color: #ffffff;
+  text-align: center;
+  background-color: #B0E0E6;
+  margin-top:15rpx;
+  margin-right: 10rpx;
+  border-radius: 25rpx;
+  font-weight: 700;
+}
+.red{
+  color: rgb(255, 0, 0);
+}
+.orange{
+  color: #ff9900;
 }

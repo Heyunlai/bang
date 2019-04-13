@@ -12,12 +12,16 @@ Page({
     requsetDisplay1: false,
     requsetDisplay2: false,
     requsetDisplay3: false,
-    help:[],
-    request: [],
+    help1:[],
+    help2: [],
+    request1: [],
+    request2: [],
+    request3: []
   },
 
   onShow: function (options) {
     _page=this;
+    let help1=[],help2=[],request1=[],request2=[],request3=[];
     if (app.globalData.isLogin){
       wx.request({
         url: app.globalData.httpUrl + '/order/getMyMsg',
@@ -29,14 +33,36 @@ Page({
         success:function(res){
           if(res.data){
             if(res.data.help){
+              for (var obj of res.data.help){
+                if(obj.isFinish==1){
+                   help1.push(obj);
+                }
+                if(obj.isFinish==2){
+                  help2.push(obj);
+                }
+              }
               _page.setData({
-                help: res.data.help,
+                help1: help1,
+                help2: help2
               })
                
             };
             if(res.data.request){
+              for (var obj of res.data.request) {
+                if (obj.isFinish == 1) {
+                 request1.push(obj);
+                }
+                if (obj.isFinish == 2) {
+                  request2.push(obj);
+                }
+                if (obj.isFinish == 0) {
+                  request3.push(obj);
+                }
+              }
               _page.setData({
-                request: res.data.request
+                request1: request1,
+                request2: request2,
+                request3: request3
               })
             }
           }
@@ -131,23 +157,35 @@ Page({
  
   handleDetailTap1(e) {
     //前往等待确认完成页面
+    if (!app.inspectLongin()){
+      return;
+    };
     wx.navigateTo({
       url: "/pages/messageDetail/messageDetail?id=" + e.currentTarget.id + '&status=' + 1,
     })
   },
   handleDetailTap2(e) {
+    if (!app.inspectLongin()) {
+      return;
+    };
    //前往已完成页面
     wx.navigateTo({
       url: "/pages/messageDetail/messageDetail?id=" + e.currentTarget.id + '&status=' + 2,
     })
   },
   handleDetailTap3(e){
+    if (!app.inspectLongin()) {
+      return;
+    };
     //前往确认完成页面
     wx.navigateTo({
       url: "/pages/messageDetail/messageDetail?id=" + e.currentTarget.id + '&status=' + 3,
     })
   },
   handleDetailTap4(e) {
+    if (!app.inspectLongin()) {
+      return;
+    };
     //前往未接页面
     wx.navigateTo({
       url: "/pages/messageDetail/messageDetail?id=" + e.currentTarget.id + '&status=' + 4,

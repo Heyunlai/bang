@@ -11,15 +11,7 @@ Page({
       latitude: "",
     width: app.globalData.windowWidth,
     height: app.globalData.windowHeight,
-    // controls: [{
-    //   iconPath: '/resources/location.png',
-    //   position: {
-    //     left: (app.globalData.windowWidth / 2) - 15,
-    //     top: ((app.globalData.windowHeight) / 2) - 20,
-    //     width: 30,
-    //     height: 50
-    //   },
-    // }],
+ 
     markers: [],
   },
 

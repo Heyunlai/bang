@@ -1,8 +1,9 @@
 <!--pages/help/help.wxml-->
 <view class='help' bindtap='handleHelpMsgDisplayTap1'>
-<view class='{{helpDisplay1?"angle-top":"angle-left"}}'></view>未完成帮单{{help.length}}
+<view class='{{helpDisplay1?"angle-top":"angle-left"}}'></view>未完成帮单
+<view class='right red'>{{help1.length}}</view>
 </view>
-<view wx:for="{{help}}" wx:key>
+<view wx:for="{{help1}}" wx:key>
 <view class="line {{helpDisplay1?'display':'none'}}" >
 <view wx:if="{{item.isFinish==1}}">
   <view id="{{item.id}}" bindtap='handleDetailTap1'>
@@ -17,8 +18,9 @@
 
 <view class='help' bindtap='handleHelpMsgDisplayTap2'>
 <view class='{{helpDisplay2?"angle-top":"angle-left"}}'></view>已完成帮单
+<view class='right'>{{help2.length}}</view>
 </view>
-<view wx:for="{{help}}" wx:key>
+<view wx:for="{{help2}}" wx:key>
 <view class="line {{helpDisplay2?'display':'none'}}" >
 <view  wx:if="{{item.isFinish==2}}">
     <view id="{{item.id}}" bindtap='handleDetailTap2'>
@@ -32,9 +34,10 @@
 
 
 <view class='request' bindtap='handleRequestChange1'>
-<view class='{{requsetDisplay1?"angle-top":"angle-left"}}'></view>已被接的求单{{request.length}}
+<view class='{{requsetDisplay1?"angle-top":"angle-left"}}'></view>已被接的求单
+<view class='right orange'>{{request1.length}}</view>
 </view>
-<view wx:for="{{request}}" wx:key>
+<view wx:for="{{request1}}" wx:key>
 <view class="line {{requsetDisplay1?'display':'none'}}" >
 <view  wx:if="{{item.isFinish==1}}">
   <view id="{{item.id}}" bindtap='handleDetailTap3'>
@@ -50,8 +53,9 @@
 
 <view class='request' bindtap='handleRequestChange2'>
 <view class='{{requsetDisplay2?"angle-top":"angle-left"}}'></view>已被完成的求单
+<view class='right'>{{request1.length}}</view>
 </view>
-<view wx:for="{{request}}" wx:key>
+<view wx:for="{{request2}}" wx:key>
 <view class="line {{requsetDisplay2?'display':'none'}}" >
 <view wx:if="{{item.isFinish==2}}">
  <view id="{{item.id}}" bindtap='handleDetailTap2' >
@@ -67,8 +71,9 @@
 
 <view class='request' bindtap='handleRequestChange3'>
 <view class='{{requsetDisplay3?"angle-top":"angle-left"}}'></view>未被接的求单
+<view class='right'>{{request1.length}}</view>
 </view>
-<view wx:for="{{request}}" wx:key>
+<view wx:for="{{request3}}" wx:key>
 <view class="line {{requsetDisplay3?'display':'none'}}" >
 <view wx:if="{{item.isFinish==0}}">
  <view id="{{item.id}}" bindtap='handleDetailTap4' >

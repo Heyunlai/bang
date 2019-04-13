@@ -1,16 +1,26 @@
 <view class='context'>
 <view wx:if="{{isLogin&&!alter&&!register}}">
- <view class='head'><image class='face' src='/resources/msg.png'></image>
- <text class='num'>账户号：{{account}}</text>
- </view>
- <view class='line'>我的昵称：{{nickName}}</view>
- <view class='line'>联系电话：{{phone}}</view>
- <view class='line'>默认地址：{{address+" "+building+" "+room}} </view>
- <view class='line'>信用分数：{{score}}</view>
+
+ <view class='head'>
+ <image class='face' src='/resources/image/用户头像.png'></image>
+  <text class='num'>账户号：{{account}}</text>
+   </view>
+    <view class='line'>我的昵称：{{nickName}}</view>
+     <view class='line'>联系电话：{{phone}}</view>
+      <view class='line'>默认地址：{{address+" "+building+" "+room}} </view>
+       <view class='line'>信用分数：{{score}}</view>
+ 
+
+
+
+
+
  <button class='btn' bindtap="handleAlterTap">修改信息</button>
  <button class='btn' bindtap="handleExitTap">退出</button>
+
 </view>
 </view>
+
 
 <view wx:if="{{!isLogin&&!register}}">
  <input  class="login" type='text' placeholder='请输入账号' bindinput="handleAccountChange"/>

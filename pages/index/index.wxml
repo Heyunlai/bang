@@ -2,21 +2,23 @@
 <scroll-view scroll-y class='scroll'  style='height:{{height}}px' bindscrolltolower='handleMoreMessage'>
 <view class="top-area">
  <view class='top-btns'>
-   <view class='top-btn' bindtap='handleOpenLocationTap'><image style="width:36rpx; height:36rpx; background-color: #eeeeee;"
-           src="/resources/msg.png"></image>{{district}}</view>
-  <view class='top-btn'>类别 <view class='angle'></view></view>
+   <view class='top-btn-1' bindtap='handleOpenLocationTap'>
+   <image style="width:36rpx; height:36rpx; background-color: white;"
+           src="/resources/image/地址.png"></image>{{district}}</view>
+  <view class='top-btn'>类别  <view class='angle'></view><image style="width:36rpx;height:36rpx;background-color: white;"
+  src="/resources/image/分类.png"></image></view> 
   <view class='top-btn' bindtap='handleWriteHelpMessageTap'>求帮忙<view class='angle'></view></view>
  </view>
  <view class='top-btn-msg' bindtap='handleNearMsgTap'>
-           <image style="width:30rpx; height:30rpx; background-color: #eeeeee;"
-           src="/resources/msg.png"></image> 附近的帮帮单
+           <image style="width:30rpx; height:30rpx; background-color:white;"
+           src="/resources/image/定位.png"></image> 附近的帮帮单
     </view>
 </view>
 <view class='fill'></view>
 <view  class='content' wx:for="{{msgArray}}" wx:key>
    <view class='content-face'>
-      <view>{{item.nickName}}</view>
-      <image src='{{item.faceSrc}}'></image>
+      <!-- <view>{{item.nickName}}</view> -->
+      <image src="/resources/image/浏览.png"></image>  <!-- 暂用浏览图片，实际获取发帮用户头像 -->
    </view>
    <view class="content-msg">
       <view class='content-msg-1'>
