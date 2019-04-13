@@ -15,24 +15,14 @@ Page({
     msgArray:[
       {
         id:"1",
-        nickName:"小明",
+        nickName:"示例",
         faceSrc:"/resources/msg.png",
-        type:"拿东西",
-        building:"楼栋",
+        type:"示例",
+        building:"示例",
         price:"￥3",
-        room:"617",
-        message:"骗娃娃回家",
-        date:"剩余15分"
-      }, {
-        id:"2",
-        nickName: "小明",
-        faceSrc: "/resources/msg.png",
-        type: "拿东西",
-        building: "楼栋",
-        price: "￥3",
-        room: "617",
-        message: "骗娃娃回家",
-        date: "剩余15分"
+        room:"示例",
+        message:"示例",
+        date:"示例"
       }
     ]
   },
@@ -42,9 +32,20 @@ Page({
   onShow(){
      wx.getLocation({
        type: 'gcj02',
-       success: this.handleGetLocationSucc.bind(this)
+       success: this.handleGetLocationSucc.bind(this),
+       fail:function(){
+        
+           wx.showToast({
+             title: '获取位置失败！',
+             icon: "loading",
+             duration: 2000
+           })
+         
+       }
        });
+
        app.globalData.pageNum=1;
+       
   },
   handleGetLocationSucc(res){
     this.setData({
@@ -52,10 +53,13 @@ Page({
       latitude: res.latitude
     });
     this.loadCity(res.longitude, res.latitude);
-    this.setData({
-      msgArray:[]
-    })
-    this.getMoreMsg();
+    if(res.latitude!=""&&res.longitude!=""){
+        this.setData({
+          msgArray: []
+        })
+        this.getMoreMsg();
+    }
+    
   },
   handleNearMsgTap(){
      const latitude=this.data.latitude;
