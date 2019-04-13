@@ -1,0 +1,36 @@
+<view class='helpCard' >
+<view class='line'><view class='title'>详细需求</view>
+<view class="info" >{{msg.message}}</view>
+</view>
+<view class='line'>
+<view class='title'>期望时间</view>
+<view class="info-input" >{{msg.dateTime}}</view>
+</view>
+<view class='line'>
+<view class='title'>预给小费</view>
+<view class="info-input" >{{msg.price}}￥</view></view>
+<view class='line'>
+<view class='title'>送达地址</view>
+ <view class="info" >{{msg.address}}</view>
+</view>
+<view class='line'>
+<view class='title'>详细地址</view>
+<view class="info" >{{msg.building}}
+ {{msg.room}}  </view>
+</view>
+
+<view class='line'>
+<view class='title'>联系方式</view>
+ <view class="info-input" >{{msg.phone}}</view>
+</view>
+<view class='line'>
+<view class='title'>备注信息</view>
+<view class="info" >{{msg.remark}}</view>
+</view>
+<button id="{{msg.id}}" class='btn' wx:if="{{status==0}}" bindtap='handleReceiveTap'>接单</button>
+<button id="{{msg.id}}" wx:if="{{status==1}}" class='btn1' >未完成/等待确认</button>
+<button id="{{msg.id}}" wx:if="{{status==2}}" class='btn1' >已完成</button>
+<button id="{{msg.id}}" class='btn' wx:if="{{status==3}}" bindtap='handleFinishTap'>确认完成</button>
+</view>
+
+

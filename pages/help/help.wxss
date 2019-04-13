@@ -1,0 +1,39 @@
+/* pages/help/help.wxss */
+.angle-left{
+  float: left;
+  margin-top: 25rpx;
+  margin-left:30rpx;
+  border: 20rpx solid rgb(151, 151, 151);
+  border-bottom: 20rpx solid rgb(255, 255, 255);
+  border-top: 20rpx solid rgb(255, 255, 255);
+  border-right: 20rpx solid rgb(255, 255, 255);
+}
+.angle-top{
+  float: left;
+  margin-top: 25rpx;
+  margin-left:30rpx;
+  border: 20rpx solid rgb(151, 151, 151);
+  border-bottom: 20rpx solid rgb(255, 255, 255);
+  border-left: 20rpx solid rgb(255, 255, 255);
+  border-right: 20rpx solid rgb(255, 255, 255);
+}
+.help,.request{
+  background-color: rgb(255, 255, 255);
+  border-top: 1px solid #c1c1c1;
+  border-bottom: 1px solid #c1c1c1;
+  line-height: 80rpx;
+  /* font-weight: 700; */
+}
+.line{
+  line-height: 80rpx;
+  /* border-bottom: 1px solid rgb(223, 223, 223); */
+}
+.display{
+  display: block;
+}
+.none{
+  display: none;
+}
+text{
+  margin-left:30rpx; 
+}

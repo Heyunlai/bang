@@ -1,0 +1,39 @@
+<!-- sample.wxml -->
+<scroll-view scroll-y class='scroll'  style='height:{{height}}px' bindscrolltolower='handleMoreMessage'>
+<view class="top-area">
+ <view class='top-btns'>
+   <view class='top-btn' bindtap='handleOpenLocationTap'><image style="width:36rpx; height:36rpx; background-color: #eeeeee;"
+           src="/resources/msg.png"></image>{{district}}</view>
+  <view class='top-btn'>类别 <view class='angle'></view></view>
+  <view class='top-btn' bindtap='handleWriteHelpMessageTap'>求帮忙<view class='angle'></view></view>
+ </view>
+ <view class='top-btn-msg' bindtap='handleNearMsgTap'>
+           <image style="width:30rpx; height:30rpx; background-color: #eeeeee;"
+           src="/resources/msg.png"></image> 附近的帮帮单
+    </view>
+</view>
+<view class='fill'></view>
+<view  class='content' wx:for="{{msgArray}}" wx:key>
+   <view class='content-face'>
+      <view>{{item.nickName}}</view>
+      <image src='{{item.faceSrc}}'></image>
+   </view>
+   <view class="content-msg">
+      <view class='content-msg-1'>
+          <text class='content-msg-1-type'>{{item.type}}</text>
+          <text class='content-msg-1-building'>{{item.building}}</text>
+          <text class='content-msg-1-price'>{{item.price}}￥</text>
+      </view> 
+      <view class='content-msg-2'>
+         <text class='content-msg-2-room'>{{item.room}}</text>
+          <text class='content-msg-2-thing'>{{item.message}}</text>
+          <text id="{{item.id}}" class='content-msg-2-help' bindtap='handleReceiveTap'>帮</text>
+      </view> 
+      <view class='content-msg-3'>
+        <text class='content-msg-3-date'>{{item.dateTime}}</text>
+          <text id="{{item.id}}"class='content-msg-3-detail' bindtap='handleDetailTap'>订单详情></text>
+      </view> 
+   </view>
+</view>
+<view class='fill'></view>
+</scroll-view>

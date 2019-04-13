@@ -1,0 +1,132 @@
+.context{
+  padding-top: 40rpx;
+
+  text-align: center;
+}
+.face{
+  display: inline-block;
+  width: 150rpx;
+  height: 150rpx;
+  border: 1px solid #c1c1c1;
+  border-radius: 50%;
+  margin-bottom: 20rpx;
+}
+.line{
+  color:  #504e4e;
+  height: 100rpx;
+  border: 1px solid #c1c1c1;
+  line-height: 100rpx;
+  text-align: left;
+  padding-left: 50rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow:ellipsis;
+}
+.head{
+  position: relative;
+  text-align: left;
+  padding-left: 50rpx;
+}
+.btn{
+  font-size: 40rpx;
+  margin-top: 40rpx;
+  height: 100rpx;
+  width: 300rpx;
+  line-height: 100rpx;
+  border: 1px solid #2e96db;
+  border-radius: 50rpx;
+  background-color: #ffffff;
+  display: inline-block
+}
+.btn1{
+  font-size: 35rpx;
+  margin-top: 40rpx;
+  height: 80rpx;
+  width: 250rpx;
+  line-height: 80rpx;
+  border: 1px solid #2e96db;
+  border-radius: 50rpx;
+  background-color: #ffffff;
+  display: inline-block;
+  margin-left:75rpx;
+  margin-right:20rpx;
+}
+.btn2{
+   font-size: 40rpx;
+  margin-top: 40rpx;
+  height: 100rpx;
+  width: 300rpx;
+  line-height: 100rpx;
+  border: 1px solid #2e96db;
+  border-radius: 50rpx;
+  background-color: #ffffff;
+  display: inline-block;
+  margin-left: 75rpx;
+}
+.num{
+  color: #504e4e;
+  position: absolute;
+  top: 40rpx;
+  left:250rpx;
+}
+.login{
+  margin: 40rpx auto 0;
+  width: 550rpx;
+  height: 100rpx;
+  padding-left: 50rpx;
+  border: 1px solid #c1c1c1;
+  border-radius: 20rpx;
+}
+
+
+
+.row{
+  overflow: hidden;
+  line-height: 50px;
+  border-bottom:1px solid #ccc;
+  padding-left: 10px; 
+  color: #777;
+}
+.submit-button{
+  margin: 10px 8px 0;
+  background-color: #ff9700;
+  line-height: 38px;
+  border-radius:6px;
+  text-align: center;
+  color: #fff; 
+}
+.title{
+  width: 100px;
+  float: left;
+}
+.info-input{
+  height: 50px;
+}
+.congratulation{
+  text-align: center;
+  line-height: 100px;
+  font-size: 16px;
+}
+.success-icon{
+  position: relative;
+  top: 6px;
+  margin-right:10px； 
+}
+.back-button{
+  margin: 0 20px;
+}
+.info{
+  font-size: 30rpx;
+}
+.btnR{
+  font-size: 40rpx;
+  margin-top: 40rpx;
+  height: 90rpx;
+  width: 500rpx;
+  line-height: 90rpx;
+  border: 1px solid #2e96db;
+  border-radius: 50rpx;
+  background-color: #ffffff;
+  display: inline-block;
+  margin-left:125rpx;
+}

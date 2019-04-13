@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/help/help",
+    "pages/me/me",
+    "pages/nearMap/nearMap",
+    "pages/writeMsg/writeMsg",
+    "pages/messageDetail/messageDetail"
+  ],
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#c1c1c1",
+    "backgroundColor": "#fff",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "帮帮首页",
+        "iconPath": "resources/location.png"
+      },
+      {
+        "pagePath": "pages/help/help",
+        "text": "我的单单",
+        "iconPath": "resources/location.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的资料",
+        "iconPath": "resources/location.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "飞毯",
+    "navigationBarTextStyle": "black"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  }
+}

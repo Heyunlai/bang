@@ -1,0 +1,59 @@
+/* pages/writeMsg/writeMsg.wxss */
+.helpCard{
+  height: 1000rpx;
+  width: 750rpx;
+  line-height: 80rpx;
+ padding-left: 30rpx;
+ padding-right: 10rpx;
+  }
+  .title{
+    font-weight: 500;
+    margin-top: 20rpx;
+    color: rgb(40, 192, 219);
+
+    display: inline-block;
+  }
+  input{
+    top: 32rpx;
+    position: absolute;
+    display: inline-block;
+    margin-left: 50rpx;
+  }
+  .info{
+    position: absolute;
+    top:20rpx;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+    color: #7a7a7a;
+    height: 80rpx;
+    line-height: 80rpx;
+    display: inline-block;
+    margin-left: 50rpx;
+    width: 500rpx;
+  }
+  .btn{
+    margin-top: 50rpx;
+    margin-left: 160rpx;
+    border-radius: 50rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    width: 400rpx;
+    background-color: rgba(51, 185, 255, 1);
+    color: #fff;
+  }
+  .line{
+    position: relative;
+  line-height: 80rpx;
+  
+  }
+  picker{
+    display: inline-block;
+    border: 1px solid #c1c1c1;
+    color: #7a7a7a;
+  }
+.date{
+  margin-left: 50rpx;
+  margin-right: 50rpx;
+}
+

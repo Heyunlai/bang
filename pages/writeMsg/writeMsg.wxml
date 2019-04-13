@@ -1,0 +1,62 @@
+<!--pages/writeMsg/writeMsg.wxml-->
+<view class='helpCard' >
+<view class='title'>分类</view>
+ <radio-group bindchange="handleTypeChange">
+        <label >
+         <radio value='拿东西' checked='true' />求拿东西
+         <radio value='买东西'/>求买东西
+         <radio value='送东西'/>求送东西
+        </label>
+  </radio-group>
+<view class='line'><view class='title'>详细需求</view>
+<input class="info-input" bindinput="handleMessageChange"  placeholder='填写你的具体需求~~'/></view>
+<view class='line'>
+<view class='title'>期望时间</view>
+<picker
+    class='date'
+    mode="date"
+    value="{{date}}"
+    bindchange="bindDateChange"
+  >
+    <view class="picker">
+     {{date}}
+    </view>
+</picker>
+<picker
+    class='time'
+    mode="time"
+    value="{{time}}"
+    bindchange="bindTimeChange"
+  >
+   <text>{{time}}</text>
+  </picker>
+</view>
+<view class='line'>
+<view class='title'>预给小费</view>
+<input class="info-input" bindinput="handlePriceChange"  placeholder='填写你预给的小费（元）~~'/>
+</view>
+
+<view class='line'>
+<view class='title'>送达地址</view>
+  <view class='info' bindtap='handleAddressClick'>
+  {{address}}    
+  </view>
+</view>
+<view class='line'>
+<view class='title'>详细楼栋</view>
+<input class="info-input" bindinput="handleBuildChange"  placeholder='{{building}}'/>
+</view>
+<view class='line'>
+<view class='title'>房间号码</view>
+<input class="info-input" bindinput="handleRoomChange"  placeholder='{{room}}'/>
+</view>
+<view class='line'>
+<view class='title'>联系方式</view>
+<input class="info-input" bindinput="handleContactChange"  placeholder='{{phone}}'/>
+</view>
+<view class='line'>
+<view class='title'>备注信息</view>
+<input class="info-input" bindinput="handleRemarkChange"  placeholder='填写备注信息式~~'/>
+</view>
+<button class='btn' bindtap='handleSubmit'>发布需求</button>
+</view>
